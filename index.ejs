@@ -1,0 +1,1971 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="root"></div>
+        </div>
+        <div class="col-md-3">
+            <div id="controls" class="py-3">
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Choose pattern
+                    </div>
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Patterns
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+
+....**......**....
+...*.*......*.*...
+...*..........*...
+**.*..........*.**
+**.*.*..**..*.*.**
+...*.*.*..*.*.*...
+...*.*.*..*.*.*...
+**.*.*..**..*.*.**
+**.*..........*.**
+...*..........*...
+...*.*......*.*...
+....**......**....
+"><img src=<%= require("./src/img/pic1.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**....
+...*..*...
+...****...
+.*.*..*.*.
+*........*
+*........*
+.*.*..*.*.
+...****...
+...*..*...
+....**....
+"><img src=<%= require("./src/img/pic2.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*.....
+...*...
+**..***
+"><img src=<%= require("./src/img/pic3.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..
+*..*
+..**
+"><img src=<%= require("./src/img/pic4.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......*......
+......*.*.....
+.......*......
+..............
+.....*****....
+....*.....*.**
+...*.**...*.**
+...*.*..*.*...
+**.*...**.*...
+**.*.....*....
+....*****.....
+..............
+......*.......
+.....*.*......
+......*.......
+"><img src=<%= require("./src/img/pic5.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**........**...**...**...**...**...**..
+..**.**.....**...**...**...**...**...**
+..**...**...**...**...**...**...**...**
+**.....**.**...**...**...**...**...**..
+.....**................................
+"><img src=<%= require("./src/img/pic6.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+.....*.....
+...........
+...*****...
+..*..*..*..
+.*.**.**.*.
+.*.*...*.*.
+**.*...*.**
+*..*.*.*..*
+..*.....*..
+...*****...
+.....*.....
+"><img src=<%= require("./src/img/pic7.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*..
+***.
+*.**
+"><img src=<%= require("./src/img/pic8.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.................*...........
+**...............**........**
+**................**.......**
+.................**..........
+.............................
+.............................
+.............................
+.................**..........
+..................**.........
+.................**..........
+.................*...........
+"><img src=<%= require("./src/img/pic9.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**....
+...*..*...
+...*.*....
+.**.*...*.
+*..*...*.*
+*.*...*..*
+.*...*.**.
+....*.*...
+...*..*...
+....**....
+"><img src=<%= require("./src/img/pic10.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....**
+......*
+...*.*.
+.......
+.*.*...
+*......
+**.....
+"><img src=<%= require("./src/img/pic11.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*..
+*.*.
+.*.*
+..*.
+"><img src=<%= require("./src/img/pic12.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..
+*...
+...*
+..**
+"><img src=<%= require("./src/img/pic13.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.
+*..*
+.**.
+"><img src=<%= require("./src/img/pic14.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..**
+*....*
+.****.
+......
+...**.
+..*..*
+...**.
+"><img src=<%= require("./src/img/pic15.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*...
+*.*..
+*.*..
+.*...
+..***
+....*
+"><img src=<%= require("./src/img/pic16.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*.....
+*.*....
+*..*...
+.**.*..
+...*.*.
+...*..*
+....**.
+"><img src=<%= require("./src/img/pic17.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.**
+**.**
+"><img src=<%= require("./src/img/pic18.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**.
+...*..*
+...*.**
+**.*...
+*..*...
+.**....
+"><img src=<%= require("./src/img/pic19.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...
+*.*..
+.....
+..*.*
+...**
+"><img src=<%= require("./src/img/pic20.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...
+***
+...
+"><img src=<%= require("./src/img/pic21.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...........*..*...............
+..........*...................
+..........*...*...............
+..**......****................
+.****.........................
+**.**.........................
+.**.....**.***................
+.......*.....**.......*....***
+......**.......*......*....*.*
+.......*.....**.......*....***
+.**.....**.***................
+**.**.........................
+.****.........................
+..**......****................
+..........*...*...............
+..........*...................
+...........*..*...............
+"><img src=<%= require("./src/img/pic22.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**
+**
+"><img src=<%= require("./src/img/pic23.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..**
+*....*
+.****.
+......
+...**.
+...**.
+"><img src=<%= require("./src/img/pic24.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...
+.*...
+.*.**
+**.**
+"><img src=<%= require("./src/img/pic25.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......*.*
+......*...
+**..*....*
+**.*..*.**
+.....**...
+"><img src=<%= require("./src/img/pic26.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*.
+*.*
+.**
+"><img src=<%= require("./src/img/pic27.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*....
+*.*...
+.**...
+...**.
+...*.*
+....*.
+"><img src=<%= require("./src/img/pic28.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...**
+*.*.*.*
+..*.*..
+.**.**.
+"><img src=<%= require("./src/img/pic29.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+....*.*....
+...**.**...
+..*.....*..
+.*.*.*.*.*.
+.*.*...*.*.
+**.*...*.**
+*..*.*.*..*
+..*.....*..
+...**.**...
+....*.*....
+....*.*....
+.....*.....
+"><img src=<%= require("./src/img/pic30.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+
+.**........
+*..*.....**
+***...***..
+*..*.****..
+.***...*...
+.*..***....
+...*....**.
+...*****.*.
+...........
+...*****.*.
+...*....**.
+.*..***....
+.***...*...
+*..*.****..
+***...***..
+*..*.....**
+.**........
+"><img src=<%= require("./src/img/pic31.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*.....*.
+..*...*.
+..*..*.*
+.*.*....
+"><img src=<%= require("./src/img/pic32.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+...*.*.*...
+...*.*.*...
+**.*.*.*.**
+**.*....*.*
+....****...
+...........
+....**.....
+....**.....
+"><img src=<%= require("./src/img/pic33.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*..
+****...*
+...*...*
+.......*
+....*...
+.....**.
+"><img src=<%= require("./src/img/pic34.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**................................................**
+.*................................................*.
+.*.*.....................**.....................*.*.
+..**........*............**............**.......**..
+...........**..........................*.*..........
+..........**.............................*..........
+...........**..**......................***..........
+....................................................
+....................................................
+....................................................
+...........**..**......................***..........
+..........**.............................*..........
+...........**..........................*.*..........
+..**........*............**............**.......**..
+.*.*.....................**.....................*.*.
+.*................................................*.
+**................................................**
+"><img src=<%= require("./src/img/pic35.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......*.......
+.......***.....
+..........*....
+.....***..*..**
+....*.*.*.*.*.*
+....*...*.*.*..
+.**.*.*.*.*.**.
+..*.*.*...*....
+*.*.*.*.*.*....
+**..*..***.....
+....*..........
+.....***.......
+.......*.......
+"><img src=<%= require("./src/img/pic36.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.
+*..*
+***.
+....
+***.
+*..*
+.**.
+"><img src=<%= require("./src/img/pic37.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*
+..***
+.*...
+*.*..
+.**..
+"><img src=<%= require("./src/img/pic38.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..*.
+**..
+..**
+.*..
+"><img src=<%= require("./src/img/pic39.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*.*...
+.***.***.
+*...*...*
+*.*.*.*.*
+.*******.
+.........
+.*******.
+*.*.*.*.*
+*...*...*
+.***.***.
+...*.*...
+"><img src=<%= require("./src/img/pic40.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*..........
+***........
+...*.......
+..*........
+..*..*.....
+.....*.....
+...*.*.....
+...**..**..
+.......*.*.
+.........*.
+.........**
+"><img src=<%= require("./src/img/pic41.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..****..
+..*..*..
+***..***
+*......*
+*......*
+***..***
+..*..*..
+..****..
+"><img src=<%= require("./src/img/pic42.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+........*.
+.......*.*
+......**..
+.........*
+.....*...*
+..*..*....
+.*.*..****
+*..*......
+.*.*..****
+..*..*....
+.....*...*
+.........*
+......**..
+.......*.*
+........*.
+"><img src=<%= require("./src/img/pic43.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...**
+*.*.*.*
+..*.*..
+*.*.*.*
+**...**
+"><img src=<%= require("./src/img/pic44.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+......*......
+.....*.*.....
+....*.*.*....
+....*...*....
+..**..*..**..
+.*....*....*.
+*.*.**.**.*.*
+.*....*....*.
+..**..*..**..
+....*...*....
+....*.*.*....
+.....*.*.....
+......*......
+"><img src=<%= require("./src/img/pic45.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.....**
+*.......*
+.***.***.
+...*.*...
+....*....
+"><img src=<%= require("./src/img/pic46.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..
+*.*.
+..*.
+..**
+"><img src=<%= require("./src/img/pic47.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**
+.....*
+..***.
+..*...
+*.*...
+**....
+"><img src=<%= require("./src/img/pic48.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+***...
+***...
+***...
+...***
+...***
+...***
+"><img src=<%= require("./src/img/pic49.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**....
+....*.*...
+.....**...
+.......**.
+**.....*.*
+*.*.....**
+.**.......
+...**.....
+...*.*....
+....**....
+"><img src=<%= require("./src/img/pic50.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**.
+**..*.*
+*.....*
+.*****.
+...*...
+"><img src=<%= require("./src/img/pic51.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**...
+.*....*.
+.*....*.
+.*....*.
+..*..*..
+*.*..*.*
+**....**
+"><img src=<%= require("./src/img/pic52.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..*
+*.*
+.**
+"><img src=<%= require("./src/img/pic53.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.........................*..........
+......................****....*.....
+.............*.......****.....*.....
+............*.*......*..*.........**
+...........*...**....****.........**
+**.........*...**.....****..........
+**.........*...**........*..........
+............*.*.....................
+.............*......................
+"><img src=<%= require("./src/img/pic54.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..........**........
+..........*.........
+..*.**.**.*.....**..
+..**.*.*.*......*...
+........*........*..
+................**..
+....................
+...........*....**..
+*.........*.*..*.*..
+***......**.**..*...
+...*.............***
+..*.*..............*
+..**................
+....................
+..**................
+..*........*........
+...*......*.*.*.**..
+..**.....*.**.**.*..
+.........*..........
+........**..........
+"><img src=<%= require("./src/img/pic55.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*....
+...*.*...
+....*....
+.........
+..*****..
+.*.....*.
+*.*...*.*
+.*.....*.
+..*****..
+.........
+....*....
+...*.*...
+....*....
+"><img src=<%= require("./src/img/pic56.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..**....
+.*..*...
+.*.**...
+**.*.**.
+....**.*
+.......*
+....***.
+....*...
+"><img src=<%= require("./src/img/pic57.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..*..
+.*.*.
+.*.*.
+**.**
+"><img src=<%= require("./src/img/pic58.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......**.......
+..**.*....*.**..
+..*..........*..
+...**......**...
+***..******..***
+*..*........*..*
+.**..........**.
+"><img src=<%= require("./src/img/pic59.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.******
+*.....*
+......*
+*....*.
+..**...
+"><img src=<%= require("./src/img/pic60.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.........*..........................
+........*.*.........................
+......***.*.........................
+.....*....**.*......................
+.....*.**...**......**..............
+....**.*.**.........*.*.............
+.........*.*****......*..*.**.......
+..*.**.**.*.....*....**.*.**.*......
+.....**.....****........*....*......
+*...*.*..*...*.*....**.*.****.**....
+*...*.*..**.*.**.**....*.*....*.*...
+.....**...***.**.*.***.*..***...*...
+..*.**.**.**.............*.*..*.*.**
+...........*......*.*.*.*..**.*.*.*.
+....**.*.*.**......**.*.*.*...*.*.*.
+.....*.**.*..*.......*.**..****.**..
+.....*....*.*........*...**.........
+....**....**........**...*..*.......
+...........................**.......
+"><img src=<%= require("./src/img/pic61.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**.*....
+...*.**....
+...........
+....***....
+...*.*.*.**
+...*...*.**
+**.*...*...
+**.*...*...
+....***....
+...........
+....**.*...
+....*.**...
+"><img src=<%= require("./src/img/pic62.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+***.
+...*
+...*
+...*
+"><img src=<%= require("./src/img/pic63.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+......*......
+.....*.*.....
+.....*.*.....
+......*......
+.............
+.**.......**.
+*..*.....*..*
+.**.......**.
+.............
+......*......
+.....*.*.....
+.....*.*.....
+......*......
+"><img src=<%= require("./src/img/pic64.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....**....
+.....**....
+...........
+...****....
+*.*....*...
+**.*...*...
+...*...*.**
+...*....*.*
+....****...
+...........
+....**.....
+....**.....
+"><img src=<%= require("./src/img/pic65.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**....
+.*..*..
+..***..
+.......
+*******
+*..*..*
+"><img src=<%= require("./src/img/pic66.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**
+..*.*
+..*..
+*.*..
+**...
+"><img src=<%= require("./src/img/pic67.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**.
+...*..*
+.*..*.*
+*....*.
+*......
+..***..
+"><img src=<%= require("./src/img/pic68.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*........*.
+*.***..***.*
+.*..*..*..*.
+....*..*....
+"><img src=<%= require("./src/img/pic69.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*.*
+***..**
+..*..*.
+.*.....
+"><img src=<%= require("./src/img/pic70.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+******.**
+******.**
+.......**
+**.....**
+**.....**
+**.....**
+**.......
+**.******
+**.******
+"><img src=<%= require("./src/img/pic71.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.*..
+.*.**..
+.......
+..***..
+.*...*.
+.*...*.
+..*.*..
+*.*.*.*
+**...**
+"><img src=<%= require("./src/img/pic72.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*...
+...**********************************************************...
+................................................................
+.**************************************************************.
+*.................................*.......*..........*.........*
+****.**.*..*****..***************....*****....*******...********
+....*...**.....**.......*.......*........*............*.........
+******..*..*****..*****....******....*****....*******...********
+*......................*.........*........*..........*.........*
+.**************************************************************.
+................................................................
+...**********************************************************...
+...*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*...
+"><img src=<%= require("./src/img/pic73.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..**.*..*.**..
+..*........*..
+...**....**...
+***..****..***
+*..*......*..*
+.**........**.
+"><img src=<%= require("./src/img/pic74.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.****
+*...*
+....*
+*..*.
+"><img src=<%= require("./src/img/pic75.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*..
+*.*.
+*..*
+.**.
+"><img src=<%= require("./src/img/pic76.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*...
+*.*..
+.*.*.
+..*.*
+...*.
+"><img src=<%= require("./src/img/pic77.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*..
+*.*.
+.*.*
+..**
+"><img src=<%= require("./src/img/pic78.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..
+*.*.
+.*.*
+..**
+"><img src=<%= require("./src/img/pic79.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*...
+***.
+...*
+**.*
+*.*.
+"><img src=<%= require("./src/img/pic80.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.....................
+**.....................
+.......................
+.......................
+.**.................**.
+.**.................**.
+.......................
+.......................
+.....................**
+.....................**
+"><img src=<%= require("./src/img/pic81.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**..
+*..*.
+.*..*
+..**.
+"><img src=<%= require("./src/img/pic82.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**..
+.*.*...
+*.....*
+.*...**
+.......
+...*.*.
+....*..
+"><img src=<%= require("./src/img/pic83.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......*.......
+..**.*...*.**..
+..*.........*..
+...**.....**...
+***..*****..***
+*..*.......*..*
+.**.........**.
+"><img src=<%= require("./src/img/pic84.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*****
+*....*
+.....*
+*...*.
+..*...
+"><img src=<%= require("./src/img/pic85.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*******...
+.***.***.***.
+*....***....*
+.****.*.***.*
+...........*.
+*.**.*.*.*...
+**.*.*.*.**..
+....*..*.*...
+.....**..*...
+.........**..
+"><img src=<%= require("./src/img/pic86.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....**...
+...*.*...
+...*.....
+**.*.....
+**.*..*..
+....**.*.
+.......*.
+.......**
+"><img src=<%= require("./src/img/pic87.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**...
+*..*..
+*.*..*
+.*....
+..**.*
+....*.
+"><img src=<%= require("./src/img/pic88.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...**
+.*.*.*.
+.**.**.
+.*.*.*.
+**...**
+"><img src=<%= require("./src/img/pic89.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+......**....
+......**....
+............
+....****..**
+**.*..*.*..*
+.*.*...**.*.
+*..*....*.**
+**..****....
+............
+....**......
+....**......
+"><img src=<%= require("./src/img/pic90.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**...
+..*..*..
+.*....*.
+*......*
+*......*
+.*....*.
+..*..*..
+...**...
+"><img src=<%= require("./src/img/pic91.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**.........
+...*.*........
+...*..........
+**.*..........
+*....*........
+*.**......***.
+.....***....**
+......***.*.*.
+.............*
+......*.*.....
+.....**.*.....
+......*.......
+....**.*......
+.......*......
+.....**.......
+"><img src=<%= require("./src/img/pic92.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..**.
+.*..*
+.*.**
+**.*.
+*..*.
+.**..
+"><img src=<%= require("./src/img/pic93.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+.*..**.....
+.***.......
+.....***...
+...**...*..
+..*....*..*
+.*.*.*.*.**
+.*.*...*.*.
+**.*.*.*.*.
+*..*....*..
+..*...**...
+...***.....
+.......***.
+.....**..*.
+....*.*....
+.....*.....
+"><img src=<%= require("./src/img/pic94.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**.....**...
+...*.......*...
+**.*.......*.**
+**.*.*****.*.**
+....*..*..*....
+.....*****.....
+...............
+.......*.......
+......*.*......
+.......*.......
+"><img src=<%= require("./src/img/pic95.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..*....*..
+**.****.**
+..*....*..
+"><img src=<%= require("./src/img/pic96.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*....
+...*.*..
+.*......
+......**
+**......
+......*.
+..*.*...
+....*...
+"><img src=<%= require("./src/img/pic97.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+***
+*.*
+*.*
+"><img src=<%= require("./src/img/pic98.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.
+*..*
+*..*
+.**.
+"><img src=<%= require("./src/img/pic99.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**....
+*..*...
+*..*...
+.**.**.
+...*..*
+...*..*
+....**.
+"><img src=<%= require("./src/img/pic100.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+....*.*....
+...**.**...
+*.*.....*.*
+**.*.*.*.**
+...*...*...
+...*...*...
+....***....
+...........
+...*.**....
+...**.*....
+"><img src=<%= require("./src/img/pic101.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..........**
+...........*
+.........*..
+.......*.*..
+............
+.....*.*....
+............
+...*.*......
+............
+..**........
+*...........
+**..........
+"><img src=<%= require("./src/img/pic102.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..***...***..
+.............
+*....*.*....*
+*....*.*....*
+*....*.*....*
+..***...***..
+.............
+..***...***..
+*....*.*....*
+*....*.*....*
+*....*.*....*
+.............
+..***...***..
+"><img src=<%= require("./src/img/pic103.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..***.*.....
+.****.*.....
+**..........
+.*.*........
+..****.*....
+...***......
+............
+............
+......*****.
+......*....*
+......*.....
+.......*...*
+.........*..
+"><img src=<%= require("./src/img/pic104.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.......*........
+.....*****......
+....*.....*.....
+.*..*..***.*....
+*.*.*.*....*..*.
+.*..*....*.*.*.*
+....*.***..*..*.
+.....*.....*....
+......*****.....
+........*.......
+"><img src=<%= require("./src/img/pic105.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**..**
+*..*.*
+.*....
+....*.
+*.*..*
+**..**
+"><img src=<%= require("./src/img/pic106.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.....
+*.*....
+.......
+..*.*..
+.......
+....*.*
+.....**
+"><img src=<%= require("./src/img/pic107.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*....
+****.
+.****
+.*..*
+.****
+****.
+*....
+"><img src=<%= require("./src/img/pic108.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..........*...........
+..........****........
+**.........****.....**
+**.........*..*.....**
+...........****.......
+..........****........
+..........*...........
+"><img src=<%= require("./src/img/pic109.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**
+**.
+.*.
+"><img src=<%= require("./src/img/pic110.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**...
+...**...
+........
+.******.
+*......*
+***...**
+........
+********
+*......*
+...**...
+...**...
+"><img src=<%= require("./src/img/pic111.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*...***
+***..*.
+.*.....
+"><img src=<%= require("./src/img/pic112.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**...
+...**...
+........
+........
+.**..**.
+*.*..*.*
+..*..*..
+"><img src=<%= require("./src/img/pic113.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....**
+.*....*.
+.*.**.*.
+..*..*..
+...*....
+.....*..
+.**.....
+.....**.
+..*.....
+....*...
+..*..*..
+.*.**.*.
+.*....*.
+**....**
+"><img src=<%= require("./src/img/pic114.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*............
+.***........**
+....*.......*.
+...**.....*.*.
+..........**..
+..............
+.....***......
+.....*..*.....
+.....*........
+..**..*...*...
+.*.*......*...
+.*.......*....
+**........***.
+............*.
+"><img src=<%= require("./src/img/pic115.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....****
+....*...*
+........*
+**..*..*.
+***......
+**..*..*.
+........*
+....*...*
+.....****
+"><img src=<%= require("./src/img/pic116.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*...
+.***...
+*...**.
+*.*.*.*
+.**.*.*
+.....*.
+"><img src=<%= require("./src/img/pic117.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*......
+..***......
+.*.........
+.*..***....
+**.*...*...
+...*...*...
+...*...*.**
+....***..*.
+.........*.
+......***..
+......*....
+"><img src=<%= require("./src/img/pic118.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...
+*..**
+.**.*
+"><img src=<%= require("./src/img/pic119.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.
+*.*
+.**
+"><img src=<%= require("./src/img/pic120.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....
+*.*...
+.**...
+...**.
+...*.*
+....*.
+"><img src=<%= require("./src/img/pic121.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....
+*.*...
+.**...
+...**.
+...*.*
+....**
+"><img src=<%= require("./src/img/pic122.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...........**...
+...**.....*.*...
+...*.*....*.....
+.....*...**.*...
+...*.**.....***.
+.***.....*.*...*
+*...*.*.....***.
+.***.....**.*...
+...*.**...*.....
+.....*....*.*...
+...*.*.....**...
+...**...........
+"><img src=<%= require("./src/img/pic123.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**
+....*
+...*.
+*.*..
+**...
+"><img src=<%= require("./src/img/pic124.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**....
+.*...**
+..*.*.*
+.......
+*.*.*..
+**...*.
+....**.
+"><img src=<%= require("./src/img/pic125.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.*.**
+...*...
+*.....*
+.*****.
+.......
+.......
+***.***
+"><img src=<%= require("./src/img/pic126.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**................**
+.*................*.
+.*.*............*.*.
+..**............**..
+.......*....*.......
+.....**.****.**.....
+.......*....*.......
+..**............**..
+.*.*............*.*.
+.*................*.
+**................**
+"><img src=<%= require("./src/img/pic127.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*.**
+**.*
+"><img src=<%= require("./src/img/pic128.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*.**.**
+**.*.*.
+......*
+***.***
+*......
+.*.*.**
+**.**.*
+"><img src=<%= require("./src/img/pic129.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**........**...
+...*.*......*.*...
+.....*......*.....
+...*.**....**.*...
+.***..........***.
+*...*.*....*.*...*
+.***..........***.
+...*.**....**.*...
+.....*......*.....
+...*.*......*.*...
+...**........**...
+"><img src=<%= require("./src/img/pic130.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....**
+*.*..*.*
+..*..*..
+*.*..*.*
+**....**
+"><img src=<%= require("./src/img/pic131.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..........*....................
+..........*...............**...
+......**.*.***..........**...*.
+*.**.**.**..*.*...**.****......
+*...**..*.**..***..*.**..**...*
+*.**....***.*.***......**..*...
+........**.*...............*..*
+*.**....***.*.***......**..*...
+*...**..*.**..***..*.**..**...*
+*.**.**.**..*.*...**.****......
+......**.*.***..........**...*.
+..........*...............**...
+..........*....................
+"><img src=<%= require("./src/img/pic132.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....*
+.*..***
+.*.*...
+..*.*..
+...*.*.
+***..*.
+*....**
+"><img src=<%= require("./src/img/pic133.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....***....
+..***.***..
+..*.....*..
+.**.....**.
+**.......**
+.**.....**.
+..*.....*..
+..***.***..
+....***....
+.....*.....
+"><img src=<%= require("./src/img/pic134.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*.*..
+*.....
+.*..*.
+...***
+"><img src=<%= require("./src/img/pic135.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+*..*
+****
+....
+****
+*..*
+"><img src=<%= require("./src/img/pic136.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....*.....
+....*.*....
+....**.....
+..**.......
+.*...***...
+*..**...*.*
+.**....*.**
+...*.*.*...
+...*...*...
+....***....
+......*.*..
+.......**..
+"><img src=<%= require("./src/img/pic137.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....**
+*.*..*.*
+..*..*..
+..*..*..
+...**...
+"><img src=<%= require("./src/img/pic138.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.***
+***.
+"><img src=<%= require("./src/img/pic139.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...*....*..
+.**.****.**
+...*....*..
+...........
+...........
+...........
+...........
+...........
+.....***...
+....***....
+...........
+...........
+...........
+...........
+...........
+..*....*...
+**.****.**.
+..*....*...
+"><img src=<%= require("./src/img/pic140.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**..**...
+.***.**.***.
+*..........*
+.****..****.
+....*..*....
+.**......**.
+.*..*..*..*.
+..***..***..
+............
+****.**.****
+*..**..**..*
+"><img src=<%= require("./src/img/pic141.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.....................**....**...................
+.....................*.*..*.*...................
+.......................*..*.....................
+......................*....*....................
+......................*....*....................
+......................*....*....................
+........................**.....**...............
+...............................***..............
+...............................**.*.............
+.................................*.*............
+.........................***....*..*............
+.................................**.............
+.........**............*.....*..................
+........*..*...........*.....*..................
+......*..*.*...........*.....*..................
+..........*.....................................
+......*.**...............***....................
+.......*.....*..................................
+.............*..................................
+**...........*..................................
+*..***..........................................
+.**......***...***............................**
+......*...................................***..*
+......*......*...............................**.
+.**..........*........*..................*......
+*..***.......*......**.**............*...*......
+**....................*............**.**.....**.
+.....................................*....***..*
+..............................................**
+................................................
+......................................*.*.......
+....................***..................*......
+.....................................*..*.......
+..................*.....*...........*.*.*.......
+..................*.....*...........*..*........
+..................*.....*............**.........
+.............**.................................
+............*..*....***.........................
+............*.*.*...............................
+.............*.***..............................
+...............***..............................
+......................**........................
+....................*....*......................
+....................*....*......................
+....................*....*......................
+.....................*..*.......................
+...................*.*..*.*.....................
+...................**....**.....................
+"><img src=<%= require("./src/img/pic142.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*....
+....*....
+....*....
+.........
+***...***
+.........
+....*....
+....*....
+....*....
+"><img src=<%= require("./src/img/pic143.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+...**
+..*.*
+.*.*.
+.*...
+**...
+"><img src=<%= require("./src/img/pic144.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.....
+**..*..
+..**.*.
+..*..*
+.*...**
+..***..
+....*..
+"><img src=<%= require("./src/img/pic145.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**....
+*.*...
+......
+..*.*.
+.....*
+....**
+"><img src=<%= require("./src/img/pic146.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*.
+*.*
+.*.
+"><img src=<%= require("./src/img/pic147.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*...
+*.*..
+.*.*.
+...*.
+...**
+"><img src=<%= require("./src/img/pic148.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+....*.*......
+....**.*.....
+.......***...
+....**....*..
+**.*..**..*..
+.*.*....*.**.
+*...*...*...*
+.**.*....*.*.
+..*..**..*.**
+..*....**....
+...***.......
+.....*.**....
+......*.*....
+"><img src=<%= require("./src/img/pic149.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.**.
+.**.**.
+..*.*..
+*.*.*.*
+*.*.*.*
+**...**
+"><img src=<%= require("./src/img/pic150.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.***.......*..
+.**..*.**.**..
+...***....*...
+.*..*.*...*...
+*....*....*..*
+*....*....*..*
+.*..*.*...*...
+...***....*...
+.**..*.**.**..
+.***.......*..
+"><img src=<%= require("./src/img/pic151.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+..*...*..
+.*.*.*.*.
+.*.*.*.*.
+**.*.*.**
+....*....
+"><img src=<%= require("./src/img/pic152.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**.......
+.*.......
+.*.*.....
+..**.....
+.....**..
+.....*.*.
+.......*.
+.......**
+"><img src=<%= require("./src/img/pic153.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.**.....
+.**.....
+........
+.*......
+*.*.....
+*..*..**
+....*.**
+..**....
+"><img src=<%= require("./src/img/pic154.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*....
+*.*...
+.*.*..
+..*.*.
+...*.*
+....*.
+"><img src=<%= require("./src/img/pic155.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+.*...
+*.*..
+.*.*.
+..*.*
+...**
+"><img src=<%= require("./src/img/pic156.gif") %> align="TOP"></a>
+
+
+                                <a href="#" class="dropdown-item" data-pattern="
+**...
+*.*..
+.*.*.
+..*.*
+...**
+"><img src=<%= require("./src/img/pic157.gif") %> align="TOP"></a>
+
+                            </div>
+                        </div>
+                        <img id="patternImg" src="" alt="">
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Set random cells
+                    </div>
+                    <div class="card-body">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="inputPassword2" class="sr-only">Cells number</label>
+                                <input type="number" id="randomCellsNumber" class="form-control" value="4000">
+                            </div>
+                            <button type="submit" id="setRandomCells" class="btn btn-primary">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Edit Cells
+                    </div>
+                    <div class="card-body">
+                        <button type="submit" id="addCells" class="btn btn-primary">
+                            Add cells
+                        </button>
+                        <button type="submit" id="removeCells" class="btn btn-secondary">
+                            Remove cells
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Change Speed
+                    </div>
+                    <div class="card-body">
+                        <input type="number" value="1" id="speedChange">ms
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" id="start" class="btn btn-success">Start</button>
+                        <button type="button" id="pause" class="btn btn-warning">Pause</button>
+                        <button type="button" id="stop" class="btn btn-danger">Stop</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

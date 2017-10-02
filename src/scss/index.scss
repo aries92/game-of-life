@@ -1,0 +1,53 @@
+#root {
+  //float: left;
+	//width: 75vw;
+  .field {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 100%;
+    height: 100vh;
+    .field-row {
+      display: flex;
+      width: 100%;
+      align-content: stretch;
+      .field-cell {
+        width: 100%;
+        //border: 1px solid #cccccc;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.alive {
+	background: black;
+}
+
+body {
+    opacity: 1;
+    &.editModeAdd {
+        cursor: copy;
+        .field-cell:hover {
+            background: #007bff;
+        }
+    }
+    &.editModeRemove {
+        cursor: alias;
+        .field-cell:hover {
+            background: #dc3545;
+        }
+    }
+    &.patternMode {
+        cursor: crosshair;
+        .field-cell:hover {
+            background: #ffc107;
+        }
+    }
+}
+
+
